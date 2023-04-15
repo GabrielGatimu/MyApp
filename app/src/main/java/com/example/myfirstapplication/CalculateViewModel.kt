@@ -24,7 +24,7 @@ class CalculateViewModel : ViewModel() {
     }
 
     fun calculate() {
-        var result = (num1.toIntOrNull() ?: 0) + (num2.toIntOrNull() ?: 0)
+        val result = (num1.toIntOrNull() ?: 0) + (num2.toIntOrNull() ?: 0)
         answer = result.toString()
     }
 }

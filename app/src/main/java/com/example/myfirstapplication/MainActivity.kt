@@ -43,7 +43,7 @@ class MainActivity : ComponentActivity() {
 
         Column(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.Center,
+                        horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             Text(text = "Sum = " + calculateViewModel.answer)
@@ -78,9 +78,7 @@ fun TextField(
     visualTransformation: VisualTransformation = VisualTransformation.None,
     keyboardOptions: KeyboardOptions = KeyboardOptions.Default
 ) {
-    var num by remember { mutableStateOf("") }
-
-    OutlinedTextField(
+        OutlinedTextField(
         value = value,
         onValueChange = onValueChange,
         label = { Text(text = label)},
